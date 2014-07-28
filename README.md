@@ -1,2 +1,1 @@
-# sailsChatApp
-### a Sails application
+# Polymer-Sails-TalkApp 
