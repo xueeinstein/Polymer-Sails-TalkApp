@@ -1,3 +1,51 @@
+<link href="/Polymer/app/bower_components/paper-shadow/paper-shadow.html" rel="import">
+
+<style>
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      padding: 16px;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    section {
+      display: flex;
+      display: -webkit-flex;
+      width: 80%;
+      margin: 16px;
+    }
+
+    aside {
+      flex: 1 1 auto;
+      -webkit-flex: 1 1 auto;
+      padding: 48px 16px;
+      user-select: text;
+      -webkit-user-select: text;
+    }
+
+    .card {
+      background: white;
+      width: 300px;
+      height: 300px;
+      position: relative;
+      margin: 16px;
+      border-radius: 2px;
+    }
+
+    .card-inner {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 2px;
+    }
+
+  </style>
+
 <h1>Code Chat</h1>
 <div>
     <h3>Login</h3>
@@ -12,6 +60,19 @@
     <input type="password" id="signupConfirmPassword" placeholder="confirm password" />
     <button id="signupButton">Signup</button>
 </div>
+ <paper-shadow z="5"></paper-shadow>
+ <section>
+    <!-- Example of using paper-shadow to add a shadow to an element -->
+    <div>
+      <div class="card">
+        <paper-shadow z="1"></paper-shadow>
+      </div>
+    </div>
+    <aside>
+      z-depth = 1
+    </aside>
+  </section>
+
 <script>
 $("#loginButton").click(function() {
     var username = $("#loginName").val();
